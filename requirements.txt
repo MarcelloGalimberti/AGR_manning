@@ -1,7 +1,7 @@
-streamlit
-pandas
-numpy
-plotly
-openpyxl
-XlsxWriter
-python-dateutil
+streamlit==1.32.2
+pandas==2.2.0
+numpy==1.26.3
+plotly==5.20.0
+matplotlib==3.8.4
+openpyxl==3.1.2
+xlsxwriter==3.2.0
