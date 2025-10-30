@@ -167,14 +167,14 @@ def crea_grafico_fabbisogno_vs_standard(df_risultato, gruppo_risorse):
 
 st.set_page_config(layout="wide")
 
-#url_immagine = 'https://github.com/MarcelloGalimberti/ducati_opt/blob/main/LOGO-Artigrafiche_Italia.png?raw=true'
+url_immagine = 'https://github.com/MarcelloGalimberti/ducati_opt/blob/main/LOGO-Artigrafiche_Italia.png?raw=true'
 #url_immagine = 'LOGO-Artigrafiche_Italia.png'#?raw=true' #LOGO-Artigrafiche_Italia.png
 # https://github.com/MarcelloGalimberti/ducati_opt/blob/main/LOGO-Artigrafiche_Italia.png
 
 col_1, col_2 = st.columns([1, 5])
 
 with col_1:
-    st.write('immagine logo')
+    st.image(url_immagine, width=200)
 
 with col_2:
     st.title('Budget personale 2026')
