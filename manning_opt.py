@@ -1,6 +1,6 @@
 # Processo manning
 # 20251028
-# env neuraplprophet conda
+# env venv source venv/bin/activate
 # poi provare PuLP per ottimizzatore
 
 import pandas as pd
@@ -144,11 +144,10 @@ def crea_grafico_fabbisogno_vs_standard(df_risultato, gruppo_risorse):
     
     fig.update_layout(
         title=f'Fabbisogno Turni vs Turni Standard - {gruppo_risorse}',
-        xaxis_tickfont_size=14,
+        xaxis=dict(tickfont=dict(size=14)),
         yaxis=dict(
-            title='Numero di Turni',
-            titlefont_size=16,
-            tickfont_size=14,
+            title=dict(text='Numero di Turni', font=dict(size=16)),
+            tickfont=dict(size=14),
         ),
         legend=dict(
             x=0,
