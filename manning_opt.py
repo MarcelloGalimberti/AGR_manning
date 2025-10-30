@@ -7,10 +7,10 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 from io import BytesIO
-#import warnings
+import warnings
 #import matplotlib.pyplot as plt
 import plotly.express as px
-#warnings.filterwarnings('ignore')
+warnings.filterwarnings('ignore')
 import plotly.graph_objects as go
 
 ####### Funzioni di utilità
