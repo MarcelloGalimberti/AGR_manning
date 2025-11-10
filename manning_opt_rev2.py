@@ -146,20 +146,14 @@ def crea_grafico_fabbisogno_vs_standard(df_risultato, gruppo_risorse):
     fig.update_layout(
         title=f'Fabbisogno Turni vs Turni Standard - {gruppo_risorse}',
         xaxis_tickfont_size=14,
-        yaxis=dict(
-            title='Numero di Turni',
-            titlefont_size=16,
-            tickfont_size=14,
-        ),
+        yaxis_title='Numero di Turni',
         legend=dict(
             x=0,
             y=1.0, 
             bgcolor='rgba(255, 255, 255, 0.5)',
             bordercolor='rgba(255, 255, 255, 0.5)',
             borderwidth=2,
-            font=dict(
-                size=12
-            )
+            font=dict(size=12)
         )
     )
     
